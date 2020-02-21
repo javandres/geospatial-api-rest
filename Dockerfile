@@ -17,13 +17,13 @@ COPY app app
 COPY run.py config.py boot.sh ./
 RUN chmod +x boot.sh
 
-ENV FLASK_APP run.py
+#ENV FLASK_APP run.py
 
 #RUN chown -R appuser:appuser ./
 #USER appuser
 
 EXPOSE 4000
 #ENTRYPOINT ["./boot.sh"]
-#CMD ["gunicorn", "-b", "0.0.0.0:5000", "run"]
+#CMD ["gunicorn", "-b", "0.0.0.0:4000", "app:app"]
 ENTRYPOINT [ "python" ]
 CMD [ "run.py" ]

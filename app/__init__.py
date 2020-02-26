@@ -3,7 +3,7 @@
 Example RESTful API Server.
 """
 from flask import Flask
-from flask_restplus import Api
+from flask_restplus import Resource, Api
 
 
 api_v1 = Api(
@@ -21,7 +21,7 @@ def create_app(flask_config_name=None, **kwargs):
     """
 
     # Initialize the Flask-App
-    app: Flask = Flask(__name__, **kwargs)
+    app = Flask(__name__, **kwargs)
 
     # Load the config file
     app.config.from_object('config.DevelopmentConfig')
@@ -34,3 +34,9 @@ def create_app(flask_config_name=None, **kwargs):
     modules.init_app(app)
 
     return app
+
+if __name__ == '__main__':
+    app = create_app()
+    # Return the app to the runner state so it gets actually loaded.
+    #app.run(host='127.0.0.1', port='5000')
+    app.run(debug=True, port=5000)

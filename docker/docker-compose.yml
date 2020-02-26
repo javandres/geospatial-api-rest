@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  flask:
+    build : .
+    container_name: Llactalab_PYP2_REST_API
+    volumes : 
+     - "..:/srv/"
+     - "./src/:/src/"
+     - "../data/:/data/"
+#     - "./docker/log/surpervisor/:/var/log/supervisor/"
+     - "./supervisor-conf.d:/etc/supervisor/conf.d"
+    ports:
+     - 5000:5001

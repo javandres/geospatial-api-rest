@@ -8,6 +8,7 @@ flask-marshmallow==0.11.0
 flask-restplus==0.13.0
 geographiclib==1.50
 geopy==1.21.0
+gunicorn==20.0.4
 importlib-metadata==1.5.0
 itsdangerous==1.1.0
 Jinja2==2.11.1
@@ -25,6 +26,9 @@ pytest==5.3.5
 pytz==2019.3
 python-dateutil==2.8.1
 python-dotenv==0.11.0
+pytest-flask==0.10.0
+pytest-pythonpath==0.7.2
+python-json-logger==0.1.9
 Shapely==1.7.0
 six==1.14.0
 wcwidth==0.1.8

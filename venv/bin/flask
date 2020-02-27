@@ -1,4 +1,4 @@
-#!/home/jagg/apps/flasktest/venv/bin/python3
+#!/home/jagg/apps/flasktest/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

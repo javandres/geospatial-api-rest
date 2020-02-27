@@ -1,5 +1,5 @@
 aniso8601==8.0.0
-attrs==19.3.0
+attrs==19.1.0
 Click==7.0
 Flask==1.1.1
 Flask-CLI==0.4.0
@@ -20,15 +20,15 @@ packaging==20.1
 pluggy==0.13.1
 py==1.8.1
 pyparsing==2.4.6
-pyproj==2.4.2.post1
+pyproj==2.5.0
 pyrsistent==0.15.7
-pytest==5.3.5
 pytz==2019.3
 python-dateutil==2.8.1
 python-dotenv==0.11.0
+pytest==3.7.1
 pytest-flask==0.10.0
-pytest-pythonpath==0.7.2
-python-json-logger==0.1.9
+pytest-pythonpath==0.7.3
+python-json-logger==0.1.11
 Shapely==1.7.0
 six==1.14.0
 wcwidth==0.1.8

@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-LABEL Llactalab -Universida de Cuenca - "jgarcia@ubicacuenca.com"
-
 RUN apt -y update &&\
     apt -y install python3 python3-pip
 

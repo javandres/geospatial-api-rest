@@ -3,7 +3,7 @@ version: "2"
 services:
   flask:
     build : .
-    container_name: Llactalab_PYP2_REST_API
+    container_name: GEO_REST_API
     volumes : 
      - "..:/srv/"
      - "./src/:/src/"

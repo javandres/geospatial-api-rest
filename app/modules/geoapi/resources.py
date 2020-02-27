@@ -134,4 +134,29 @@ class PointToPointDistance(Resource):
 
         abort(HTTPStatus.BAD_REQUEST,
               message="Please provide a valid query e.g. with the following url arguments: "
-                      "http://127.0.0.1:4000/api/geoapi/point/distance/?start_lng=8.83546&start_lat=53.071124&end_lng=10.006168&end_lat=53.549926")            
+                      "http://127.0.0.1:4000/api/geoapi/point/distance/?start_lng=8.83546&start_lat=53.071124&end_lng=10.006168&end_lat=53.549926")
+
+@api.route('/linestring/length/')
+class LinestringLength(Resource):
+    """
+    Return if the length in meter of a given GeoJSON LineString
+    """
+
+    @api.expect(linestring_feature, validate=True)
+    @api.doc(id='linestring_length')
+    def post(self):
+        """
+        Return if the length in meter of a given GeoJSON LineString
+        """
+        try:
+            line_coordinates = request.json['geometry']['coordinates']
+            length = 0
+            for idx in range(len(line_coordinates) - 1):
+                length += distance.distance(
+                    line_coordinates[idx], line_coordinates[idx + 1]
+                ).meters
+            return length
+        except Exception as err:
+            pass
+        abort(HTTPStatus.BAD_REQUEST,
+              message="Please provide a valid POST GeoJSON and valid query with the following url arguments.")                      

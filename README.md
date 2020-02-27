@@ -59,8 +59,8 @@ Go to: http://127.0.0.1:5000/api/v1/
 ### Run with Docker
 
 ```sh
-$ git clone https://github.com/javandres/xxxx
-$ cd xxxx
+$ git clone https://github.com/javandres/geospatial-api-rest/
+$ cd geospatial-api-rest
 $ cd docker
 $ docker-compose up
 ```

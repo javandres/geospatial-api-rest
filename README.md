@@ -14,8 +14,6 @@ Based on
 * [https://medium.com/dataswati-garage-create-a-robust-ai-rest-api](https://medium.com/dataswati-garage/create-a-robust-ai-rest-api-71a8050ce314)
 * [https://gis-ops.com/flask-geoapi-flask-with-geospatial-super-powers/](https://gis-ops.com/flask-geoapi-flask-with-geospatial-super-powers/)
 * [https://github.com/apryor6/flask_api_example](https://github.com/apryor6/flask_api_example)
-* [https://medium.com/@thucnc/deploy-a-python-flask-restful-api-app-with-gunicorn-supervisor-and-nginx](https://medium.com/@thucnc/deploy-a-python-flask-restful-api-app-with-gunicorn-supervisor-and-nginx-62b20d62691f)
-
 
 Components :
 

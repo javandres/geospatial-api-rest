@@ -8,10 +8,9 @@ from flask_restplus import Resource, Api
 
 api_v1 = Api(
     version='1.0',
-    title="LlactaLab | REST GeoAPI",
+    title="FLASK | FLASK-RESTPlus GeoAPI",
     description=(
-        "This is a REST API with geospatial super power.\n\n"
-        "Checkout more at https://llactalab.ucuenca.edu.ec\n"
+        "This is a FLASK-RESPlus powered API with geospatial super power.\n\n"
     ),
 )
 
@@ -34,9 +33,3 @@ def create_app(flask_config_name=None, **kwargs):
     modules.init_app(app)
 
     return app
-
-if __name__ == '__main__':
-    app = create_app()
-    # Return the app to the runner state so it gets actually loaded.
-    #app.run(host='127.0.0.1', port='5000')
-    app.run(debug=True, port=5000)

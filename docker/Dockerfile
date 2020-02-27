@@ -1,22 +1,14 @@
 FROM ubuntu:16.04
 
-
-MAINTAINER Llactalab -Universida de Cuenca - "jgarcia@ubicacuenca.com"
-
+LABEL Llactalab -Universida de Cuenca - "jgarcia@ubicacuenca.com"
 
 RUN apt -y update &&\
     apt -y install python3 python3-pip
 
 RUN python3 -m pip install --upgrade pip
 
-
 RUN apt -y update &&\
     apt install -y nginx supervisor
-
-# install redis q
-# RUN apt-get update -qq \
-#  && apt-get install --no-install-recommends -y \
-#     redis-server
 
 #install all python modules
 ADD requirements.txt /

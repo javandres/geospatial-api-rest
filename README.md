@@ -46,9 +46,11 @@ the container installation and setup.
 ### Run local
 
 ```sh
+$ git clone https://github.com/javandres/geospatial-api-rest/
+$ cd geospatial-api-rest
 $ virtualenv -p python3 ./venv
 $ source ./venv/bin/activate
-$ pip3 install -r requirements.txt
+$ pip3 install -r docker/requirements.txt
 
 $ python run.py
     or
